@@ -1,6 +1,6 @@
 import { simulateNetworkDelay } from './delay';
 
-// Retry mechanism for flaky __tests__
+// Retry mechanism for flaky tests
 export const retry = async <T>(
   fn: () => Promise<T>,
   maxAttempts = 3,
